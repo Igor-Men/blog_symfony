@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - blog_local@localhost" uuid="a3c6be0c-909a-4322-bb7e-fc8f2cc08fc8">
+    <database-info product="MySQL" version="5.7.13-0ubuntu0.16.04.2" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="blog_local">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="booking"/>
+      <schema id="3" name="first"/>
+      <schema id="4" name="information_schema"/>
+      <schema id="5" name="kara_dag"/>
+      <schema id="6" name="kara_dag1"/>
+      <schema id="7" name="kara_dag2"/>
+      <schema id="8" name="kara_dag4"/>
+      <schema id="9" name="kara_dug_main"/>
+      <schema id="10" name="mysql"/>
+      <schema id="11" name="performance_schema"/>
+      <schema id="12" name="sys"/>
+      <schema id="13" name="yii2angular"/>
+      <schema id="14" name="yii2basic"/>
+      <table id="15" parent="1" name="migration_versions"/>
+      <table id="16" parent="1" name="post"/>
+      <column id="17" parent="15" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="18" parent="15" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="16" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="20" parent="16" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="21" parent="16" name="date_created">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="22" parent="16" name="date_updated">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="23" parent="16" name="text">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1000)|0</data-type>
+      </column>
+      <key id="24" parent="16" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
